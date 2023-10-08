@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { User } from './interfaces/user.interface';
-import { UserInMemory } from './repositories/in-memory/UserInMemory';
+import { User } from '../domain/user';
+import { UserInMemory } from '../infra/repositories/in-memory/UserInMemory';
 
 @Injectable()
 export class UsersService {
